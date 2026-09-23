@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Analyzer - Kelompok 1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <header class="header">
+
+                <!-- Logo UPNVJ di kanan atas -->
+                <img
+                    src="logo-upnvj.png"
+                    alt="Logo UPN Veteran Jakarta"
+                    class="logo"
+                >
+
+                <h1>Number Analyzer</h1>
+                <p>By: Kelompok 1</p>
+
+            </header>
+
+
+            <section class="input-section">
+
+                <label for="jumlahAngka">
+                    Banyak angka
+                </label>
+
+                <input
+                    type="number"
+                    id="jumlahAngka"
+                    placeholder="Contoh: 5"
+                    min="1"
+                    step="1"
+                >
+
+                <button id="mulaiBtn">
+                    Mulai Analisis
+                </button>
+
+            </section>
+
+
+            <section id="numberInputSection" class="number-input-section">
+                <!-- Input angka akan muncul di sini -->
+            </section>
+
+
+            <button id="analisisBtn" class="analisis-btn">
+                Analisis Angka
+            </button>
+
+
+            <section class="result-section">
+
+                <h2>Hasil Analisis</h2>
+
+                <div class="result-grid">
+
+                    <div class="result-box">
+                        <span>Positif</span>
+                        <strong id="positif">-</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Negatif</span>
+                        <strong id="negatif">-</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Ganjil</span>
+                        <strong id="ganjil">-</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Genap</span>
+                        <strong id="genap">-</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Total</span>
+                        <strong id="total">-</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Rata-rata</span>
+                        <strong id="rataRata">-</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
